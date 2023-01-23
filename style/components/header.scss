@@ -1,0 +1,98 @@
+header{
+    height: 100vh;
+    .background-header{
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            display: flex;
+            justify-content: center;
+            font-family: 'Playfair';
+            font-size: 105px;
+        }
+        .dev{
+            display: flex;
+            justify-content: space-between;
+            width: 45%;
+            p{
+                font-size: 17px;
+                border: 2px solid black;
+                border-radius: 15px;
+                padding: 5px 15px;
+            }
+        }
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+        .logo{
+            width: 40%;
+            display: flex;
+            justify-content: left;
+            svg{
+                position: absolute;
+                z-index: -1;
+                top: 0px;
+                width: 150px;
+                height: 150px;
+            }
+            a{
+                margin-left: 35px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 46, 81);
+            font-family: 'Dancing Script';
+            font-weight: 600;
+            font-size: 35px;
+        }
+        nav{
+            padding: 20px 20px 20px 20px;
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            a{
+                font-size: 17px;
+                font-weight: 400;
+                font-style: normal;
+                color: #000000;
+                padding: 10px;
+                font-family: 'rubik';
+            }
+            .close_button{
+                display: none;
+            }
+            .svg{
+                position: absolute;
+                z-index: -1;
+                top: 5px;
+                right: 265px;
+                width: 140px;
+                height: 140px;
+            }
+            .svg_2{
+                position: absolute;
+                z-index: -1;
+                top: 5px;
+                right: 102px;
+                width: 140px;
+                height: 140px;
+            }
+            .svg_3{
+                position: absolute;
+                z-index: -1;
+                top: 5px;
+                right: 430px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+    }
+}

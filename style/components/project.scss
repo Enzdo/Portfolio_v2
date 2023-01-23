@@ -1,0 +1,69 @@
+.project{
+    width: 80%;
+    h2{
+        font-size: 55px;
+        margin:0; padding:0;
+                text-align: left;
+                color: transparent;
+                background-image: linear-gradient(to right,  rgb(255, 46, 81),  rgb(255, 72, 102),#f00,  rgb(255, 46, 81), rgb(255, 72, 102));
+                background-clip: text;
+                -webkit-background-clip: text;
+                animation: animate 5s linear infinite;
+                background-size: 1000%;
+
+    }
+    .projects{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        .container_project{
+            padding-bottom: 45px;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+              @keyframes animate{
+                0%{
+                  background-position: 0% 100%;
+                }
+                50%{
+                  background-position: 100% 0%;
+                }
+                100%{
+                  background-position: 0% 100%;
+                }
+              }
+            .box{
+                background-color: aqua;
+                border-radius: 12px;
+                height: 100%;
+                width: 48%;
+                h4{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 200;
+                }
+                img{
+                    border-radius: 12px 12px 0px 0px;
+                    width: 100%;
+                    height: 80%;
+                }
+                .box-description{
+                    background-color: aqua;
+                    padding: 20px;
+                    border-radius: 12px 12px 12px 12px;
+                    height: 100%;
+                    .titre{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
