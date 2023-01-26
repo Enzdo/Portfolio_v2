@@ -18,15 +18,19 @@
         .avatar{
             width: 200px;
             height: 200px;
-            background-color: white;
-            padding: 20px;
+            backdrop-filter: blur(7px) saturate(180%);
+            -webkit-backdrop-filter: blur(7px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);
+            padding: 10px;
             border-radius: 50%;
         }
         p{
             text-align: justify;
             width: 70%;
             margin: 10px 25px;
-            font-size: 12px;
+            font-size: 16px;
             color: rgb(110, 110, 110);
             border: 0.5px solid rgb(110, 110, 110);
             padding: 15px 25px;
@@ -60,7 +64,7 @@
                     font-family: 'Dancing Script';
                     font-weight: 600;
                 }
-                .card{
+                .card_about{
                     display: flex;
                     flex-direction: column;
                     h5{
@@ -69,11 +73,23 @@
                     }
                     .softDigital{
                         padding: 10px 0px 10px 0px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .software{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            width: 60px;
+                            padding-bottom: 10px;
+                        }
+                        p{
+                            font-size: 10px;
+                        }
                         img{
                             width: 35px;
                             height: 35px;
-                            margin: 0px 20px 20px 0px;
-                           
+                            margin: 0px 0px 4px 0px;
                         }
                     }
                 }
@@ -81,7 +97,7 @@
             .box_2{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: flex-start;
                 width: 40%;
                 padding: 0px 2.5%;
                 .experiance{
@@ -95,7 +111,7 @@
                     font-family: 'Dancing Script';
                     font-weight: 600;
                 }
-                .card{
+                .card_about{
                     display: flex;
                     flex-direction: column;
                     padding-top: 10px;
@@ -113,10 +129,22 @@
                     }
                     .softDigital{
                         padding: 10px 0px 10px 0px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .software{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            width: 60px;
+                        }
+                        p{
+                            font-size: 10px;
+                        }
                         img{
                             width: 35px;
                             height: 35px;
-                            margin: 0px 20px 0px 0px;
+                            margin: 0px 0px 4px 0px;
                         }
                     }
                 }
@@ -142,12 +170,67 @@
                     }
                 }
                 .passion_img{
+                    padding: 10px 0px 10px 0px;
                     display: flex;
+                    flex-direction: row;
+                    .software{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 60px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
                     img{
                         width: 35px;
                         height: 35px;
-                        margin: 0px 20px 0px 0px;
+                        margin: 0px 0px 4px 0px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 40rem) {
+    .aboutMe{
+        width: 99%; // ici
+        padding: 100px 25px 50px 25px;
+        .hello{
+            display: flex;
+            flex-direction: column; // ici
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .avatar{
+                margin:0px 0px 30px 0px;
+            }
+            p{  
+                padding-top: 10px;
+                width: 100%;
+                margin: 0;
+            }
+        }
+        .apropo{
+            .container{
+                flex-direction: column; // ici
+                align-items: center; //ici
+                .box_1{
+                    width: 90%; //ici
+                    padding: 0px 0px 30px 0px;
+                }
+                .box_2{
+                    width: 90%; //ici
+                    padding: 0px 0px 30px 0px;
+                    h3{
+                        padding: 30px 0px 0px 0px;
+                    }
+                }
+                .box_3{
+                    width: 90%; //ici
+                    padding: 0px 0px 30px 0px;
                 }
             }
         }
