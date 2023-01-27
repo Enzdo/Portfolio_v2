@@ -1,24 +1,28 @@
-header{
+header {
     height: 100vh;
-    .background-header{
+
+    .background-header {
         width: 100%;
         height: 65vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        h1{
+
+        h1 {
             display: flex;
             justify-content: center;
             font-weight: 500;
             font-family: 'rubik';
             font-size: 105px;
         }
-        .dev{
+
+        .dev {
             display: flex;
             justify-content: space-between;
             width: 45%;
-            p{
+
+            p {
                 font-size: 17px;
                 border: 2px solid black;
                 border-radius: 15px;
@@ -26,40 +30,47 @@ header{
             }
         }
     }
-    .scroll{ 
+
+    .scroll {
         position: absolute;
-        top: 570px;
+        top: 620px;
         left: 0;
         transform: rotate(-90deg);
-        h3{
-            font-family: "Open Sans",sans-serif;
+
+        h3 {
+            font-family: "Open Sans", sans-serif;
             font-size: 12px;
         }
     }
-    .nav-bar{
+
+    .nav-bar {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
         height: 20vh;
-        .logo{
+
+        .logo {
             width: 40%;
             display: flex;
             justify-content: left;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: rgb(255, 46, 81);
             font-family: 'Dancing Script';
             font-weight: 600;
             font-size: 45px;
         }
-        nav{
-            padding: 20px 20px 20px 20px;
+
+        nav {
+            padding: 20px 20px 0px 20px;
             width: 40%;
             display: flex;
             justify-content: space-around;
-            a{
+
+            a {
                 font-size: 17px;
                 font-weight: 400;
                 font-style: normal;
@@ -67,6 +78,7 @@ header{
                 padding: 10px;
                 font-family: 'rubik';
             }
+
             .hover-link::after {
                 content: '';
                 display: block;
@@ -74,63 +86,72 @@ header{
                 height: 2px;
                 background: rgb(255, 46, 81);
                 transition: width .3s;
-              }
-              
-              .hover-link:hover::after {
+            }
+
+            .hover-link:hover::after {
                 width: 100%;
                 transition: width .3s;
-              }
+            }
         }
     }
 }
+
 @media (max-width: 40rem) {
-    header{
+    header {
         height: 100vh;
-        .background-header{
+
+        .background-header {
             width: 100%;
             height: 65vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            h1{
+
+            h1 {
                 display: flex;
                 justify-content: center;
                 font-weight: 800;
                 font-family: 'Playfair';
                 font-size: 50px;
             }
-            .dev{
+
+            .dev {
                 display: flex;
                 justify-content: space-between;
                 width: 80%;
-                p{
+
+                p {
                     font-size: 12px;
                     border: 2px solid black;
                     border-radius: 15px;
                     padding: 5px 15px;
                 }
             }
-            .scroll{
+
+            .scroll {
                 transform: rotate(45deg);
-                font-family: "Open Sans",sans-serif;
+                font-family: "Open Sans", sans-serif;
                 font-size: 14px;
             }
         }
-        .nav-bar{
+
+        .nav-bar {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             width: 100%;
             height: 20vh;
-            .logo{
+
+            .logo {
                 width: 100%;
                 display: flex;
                 justify-content: center;
             }
-            nav{
+
+            nav {
                 display: none;
             }
         }
     }
-  }
+}
