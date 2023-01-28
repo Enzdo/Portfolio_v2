@@ -332,6 +332,16 @@ header .nav-bar nav .hover-link:hover::after {
   margin: 0px 0px 4px 0px;
 }
 
+@media (max-width: 56rem) {
+  .aboutMe .apropo .container .box_1 h3,
+.aboutMe .apropo .container .box_2 h3 {
+    font-size: 35px;
+  }
+  .aboutMe .apropo .container .box_1 h5,
+.aboutMe .apropo .container .box_2 h5 {
+    font-size: 20px;
+  }
+}
 @media (max-width: 40rem) {
   .aboutMe {
     width: 99%;
@@ -370,6 +380,14 @@ header .nav-bar nav .hover-link:hover::after {
   .aboutMe .apropo .container .box_3 {
     width: 90%;
     padding: 0px 0px 30px 0px;
+  }
+  .aboutMe .apropo .container .box_1 h3,
+.aboutMe .apropo .container .box_2 h3 {
+    font-size: 45px;
+  }
+  .aboutMe .apropo .container .box_2 .card_about h5,
+.aboutMe .apropo .container .box_1 .card_about h5 {
+    font-size: 25px;
   }
 }
 .project {
@@ -467,17 +485,17 @@ img {
   padding: 1rem;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 44rem) {
   .project h1 {
     font-size: 35px;
   }
 }
-@media (min-width: 40rem) {
+@media (min-width: 44rem) {
   .cards_item {
     width: 50%;
   }
 }
-@media (min-width: 56rem) {
+@media (min-width: 64rem) {
   .cards_item {
     width: 33.3333%;
   }
@@ -568,7 +586,7 @@ img {
   margin-top: 5%;
   top: 0;
   width: 90%;
-  height: 6500px;
+  height: 3400px;
   filter: blur(10px);
 }
 
@@ -875,6 +893,10 @@ img {
   font-style: italic;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -894,6 +916,14 @@ body {
 body ::selection {
   background-color: rgba(255, 255, 255, 0.274);
   color: rgb(255, 46, 81);
+}
+
+.color {
+  color: rgb(0, 0, 0);
+}
+
+.iim {
+  color: rgb(255, 129, 18);
 }
 
 @media screen and (max-width: 768px) {

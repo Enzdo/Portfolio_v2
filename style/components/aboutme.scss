@@ -228,6 +228,21 @@
     }
 }
 
+
+@media (max-width: 56rem) {
+
+    .aboutMe .apropo .container .box_1 h3,
+    .aboutMe .apropo .container .box_2 h3 {
+        font-size: 35px;
+    }
+
+    .aboutMe .apropo .container .box_1 h5,
+    .aboutMe .apropo .container .box_2 h5 {
+        font-size: 20px;
+    }
+}
+
+
 @media (max-width: 40rem) {
     .aboutMe {
         width: 99%; // ici
@@ -276,5 +291,15 @@
                 }
             }
         }
+    }
+
+    .aboutMe .apropo .container .box_1 h3,
+    .aboutMe .apropo .container .box_2 h3 {
+        font-size: 45px;
+    }
+
+    .aboutMe .apropo .container .box_2 .card_about h5,
+    .aboutMe .apropo .container .box_1 .card_about h5 {
+        font-size: 25px;
     }
 }

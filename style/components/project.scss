@@ -99,7 +99,7 @@ img {
   padding: 1rem;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 44rem) {
   .project {
     h1 {
       font-size: 35px;
@@ -107,13 +107,15 @@ img {
   }
 }
 
-@media (min-width: 40rem) {
+
+
+@media (min-width: 44rem) {
   .cards_item {
     width: 50%;
   }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 64rem) {
   .cards_item {
     width: 33.3333%;
   }
