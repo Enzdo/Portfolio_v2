@@ -36,6 +36,10 @@
 
     }
 
+    #competence-tel {
+        display: none;
+    }
+
     .box {
         display: none;
     }
@@ -83,6 +87,10 @@
         width: 50%;
         height: 100%;
 
+    }
+
+    #digitaux {
+        display: none;
     }
 }
 
@@ -164,7 +172,8 @@
         margin: 0px;
         flex-direction: column;
         width: 95%;
-        height: 80vh;
+        height: 100vh;
+        padding-top: 100px;
 
         .description {
             width: 100%;
@@ -181,11 +190,16 @@
             width: 100%;
             height: 200px;
         }
+
+        #competence-tel {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
     }
 
     #competence {
-        width: 100%;
-        height: 100%;
+        display: none;
     }
 
     svg,
@@ -199,21 +213,20 @@
         width: 90%;
         height: 80vh;
         margin: 0px 0px;
+        padding-top: 100px;
 
         .description {
             width: 100%;
         }
-    }
 
-    #digitaux {
-        width: 100%;
-        height: 100%;
-
-        svg,
-        rect {
+        #digitaux {
+            display: block;
             width: 100%;
-            height: 100%;
         }
-
     }
+
+    #digital {
+        display: none;
+    }
+
 }
