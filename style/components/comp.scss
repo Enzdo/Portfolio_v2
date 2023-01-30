@@ -1,0 +1,76 @@
+.comp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 90vh;
+    padding-top: 20px;
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        padding: 5px 20px 0px 20px;
+        color: black;
+        font-size: 'rubik';
+
+        h1 {
+            text-align: left;
+            color: black;
+            font-size: 75px;
+        }
+
+        p {
+            text-align: justify;
+            padding: 40px 0px 0px 0px;
+            font-size: 22px;
+        }
+    }
+
+    #competence {
+        width: 50%;
+        height: 100%;
+
+    }
+}
+
+.comp2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 90vh;
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
+        height: 80%;
+        padding: 35px 20px;
+        color: black;
+        font-size: 'rubik';
+
+        h1 {
+            text-align: left;
+            color: black;
+            font-size: 75px;
+        }
+
+        p {
+            text-align: justify;
+            padding: 40px 0px 0px 0px;
+            font-size: 22px;
+        }
+    }
+
+    #digital {
+        width: 50%;
+        height: 100%;
+
+    }
+}

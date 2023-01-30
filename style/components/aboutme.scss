@@ -1,305 +1,59 @@
 .aboutMe {
-    width: 80%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: row-reverse;
     padding: 100px 25px 100px 25px;
+
+    .box {
+        Top: 65vw;
+        left: -70vw;
+        z-index: -1;
+        filter: blur(150px);
+        position: absolute;
+        background-color: rgb(87, 87, 87);
+        width: 100%;
+        height: 200px;
+    }
+
+    .pdp {
+        width: 35%;
+        height: 100%;
+
+        .avatar {
+            width: 450px;
+            height: 450px;
+            backdrop-filter: blur(7px) saturate(180%);
+            -webkit-backdrop-filter: blur(7px) saturate(180%);
+            background-color: rgba(61, 61, 61, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(61, 61, 61, 0.1);
+            padding: 10px;
+            border-radius: 50%;
+        }
+    }
 
     .hello {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        width: 45%;
 
         h2 {
             padding-bottom: 10px;
-            color: white;
+            color: rgb(0, 0, 0);
             font-weight: 700;
-            font-style: italic;
-        }
-
-        .avatar {
-            width: 200px;
-            height: 200px;
-            backdrop-filter: blur(7px) saturate(180%);
-            -webkit-backdrop-filter: blur(7px) saturate(180%);
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            border: 1px solid rgba(209, 213, 219, 0.3);
-            padding: 10px;
-            border-radius: 50%;
+            font-size: 75px;
         }
 
         p {
             text-align: justify;
-            width: 70%;
-            margin: 10px 25px;
-            font-size: 16px;
-            color: rgb(110, 110, 110);
-            border: 0.5px solid rgb(110, 110, 110);
-            padding: 15px 25px;
+            width: 100%;
+            font-size: 22px;
+            color: rgb(0, 0, 0);
             border-radius: 14px;
         }
-
-        svg {
-            position: absolute;
-            z-index: -1;
-            top: 720px;
-            left: 80px;
-            width: 650px;
-            height: 650px;
-
-        }
     }
 
-    .apropo {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 20px;
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: 100%;
-
-            .box_1 {
-                width: 30%;
-
-                h3 {
-                    font-size: 45px;
-                    color: rgb(255, 46, 81);
-                    font-family: 'Dancing Script';
-                    font-weight: 600;
-                }
-
-                .card_about {
-                    display: flex;
-                    flex-direction: column;
-
-                    h5 {
-                        font-size: 25px;
-                        font-family: 'Playfair';
-                    }
-
-                    .softDigital {
-                        padding: 10px 0px 10px 0px;
-                        display: flex;
-                        flex-wrap: wrap;
-
-                        .software {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            flex-direction: column;
-                            width: 60px;
-                            padding-bottom: 10px;
-                        }
-
-                        p {
-                            font-size: 10px;
-                        }
-
-                        img {
-                            width: 35px;
-                            height: 35px;
-                            margin: 0px 0px 4px 0px;
-                        }
-                    }
-                }
-            }
-
-            .box_2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                width: 40%;
-                padding: 0px 2.5%;
-
-                .experiance {
-                    display: flex;
-                    flex-direction: column;
-                    height: 50%;
-                }
-
-                h3 {
-                    font-size: 45px;
-                    color: rgb(255, 46, 81);
-                    font-family: 'Dancing Script';
-                    font-weight: 600;
-                }
-
-                .card_about {
-                    display: flex;
-                    flex-direction: column;
-                    padding-top: 10px;
-
-                    h5 {
-                        font-size: 25px;
-                        font-family: 'Playfair';
-                    }
-
-                    h6 {
-                        font-size: 18px;
-                        font-weight: 200;
-                    }
-
-                    p {
-                        font-size: 15px;
-                        font-weight: 200;
-                    }
-
-                    .softDigital {
-                        padding: 10px 0px 10px 0px;
-                        display: flex;
-                        flex-wrap: wrap;
-
-                        .software {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            flex-direction: column;
-                            width: 60px;
-                        }
-
-                        p {
-                            font-size: 10px;
-                        }
-
-                        img {
-                            width: 35px;
-                            height: 35px;
-                            margin: 0px 0px 4px 0px;
-                        }
-                    }
-                }
-            }
-
-            .box_3 {
-                width: 50%;
-                padding-top: 30px;
-
-                h3 {
-                    padding-bottom: 20px;
-                    font-size: 45px;
-                    color: rgb(255, 46, 81);
-                    font-family: 'Dancing Script';
-                    font-weight: 600;
-                }
-
-                p {
-                    padding-bottom: 10px;
-                    font-size: 14px;
-                    font-weight: 200;
-
-                    span {
-                        font-size: 18px;
-                        font-weight: 600;
-                        font-family: 'playfair';
-                    }
-                }
-
-                .passion_img {
-                    padding: 10px 0px 10px 0px;
-                    display: flex;
-                    flex-direction: row;
-
-                    .software {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        width: 60px;
-                    }
-
-                    p {
-                        font-size: 10px;
-                    }
-
-                    img {
-                        width: 35px;
-                        height: 35px;
-                        margin: 0px 0px 4px 0px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media (max-width: 56rem) {
-
-    .aboutMe .apropo .container .box_1 h3,
-    .aboutMe .apropo .container .box_2 h3 {
-        font-size: 35px;
-    }
-
-    .aboutMe .apropo .container .box_1 h5,
-    .aboutMe .apropo .container .box_2 h5 {
-        font-size: 20px;
-    }
-}
-
-
-@media (max-width: 40rem) {
-    .aboutMe {
-        width: 99%; // ici
-        padding: 100px 25px 50px 25px;
-
-        .hello {
-            display: flex;
-            flex-direction: column; // ici
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-
-            .avatar {
-                margin: 0px 0px 30px 0px;
-            }
-
-            p {
-                padding-top: 10px;
-                width: 100%;
-                margin: 0;
-            }
-        }
-
-        .apropo {
-            .container {
-                flex-direction: column; // ici
-                align-items: center; //ici
-
-                .box_1 {
-                    width: 90%; //ici
-                    padding: 0px 0px 30px 0px;
-                }
-
-                .box_2 {
-                    width: 90%; //ici
-                    padding: 0px 0px 30px 0px;
-
-                    h3 {
-                        padding: 30px 0px 0px 0px;
-                    }
-                }
-
-                .box_3 {
-                    width: 90%; //ici
-                    padding: 0px 0px 30px 0px;
-                }
-            }
-        }
-    }
-
-    .aboutMe .apropo .container .box_1 h3,
-    .aboutMe .apropo .container .box_2 h3 {
-        font-size: 45px;
-    }
-
-    .aboutMe .apropo .container .box_2 .card_about h5,
-    .aboutMe .apropo .container .box_1 .card_about h5 {
-        font-size: 25px;
-    }
 }

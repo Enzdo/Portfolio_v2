@@ -1,20 +1,24 @@
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
 
+
     .background-header {
-        width: 100%;
-        height: 65vh;
+        height: 80vh;
+        width: 80%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: left;
+        justify-content: left;
+        background: #000;
 
         h1 {
             display: flex;
-            justify-content: center;
+            text-align: left;
             font-weight: 500;
-            font-family: 'rubik';
-            font-size: 105px;
+            font-family: 'Avenir LT Std';
+            font-size: 103px;
         }
 
         .dev {
@@ -44,11 +48,12 @@ header {
     }
 
     .nav-bar {
+        background-color: white;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        height: 20vh;
+        height: 12vh;
 
         .logo {
             width: 40%;
@@ -58,25 +63,31 @@ header {
 
         a {
             text-decoration: none;
-            color: rgb(255, 46, 81);
-            font-family: 'Dancing Script';
+            color: rgb(0, 0, 0);
+            font-family: 'Avenir LT Std', sans-serif;
             font-weight: 600;
-            font-size: 45px;
+            font-size: 35px;
         }
 
         nav {
-            padding: 20px 20px 0px 20px;
+            padding: 10px 20px 0px 20px;
             width: 40%;
             display: flex;
             justify-content: space-around;
 
             a {
-                font-size: 17px;
-                font-weight: 400;
+                font-size: 13px;
+                font-weight: 700;
                 font-style: normal;
                 color: #000000;
                 padding: 10px;
-                font-family: 'rubik';
+                font-family: 'Avenir LT Std', sans-serif;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-top: -7px;
+                }
             }
 
             .hover-link::after {
@@ -96,6 +107,16 @@ header {
     }
 }
 
+.hero-text-content {
+    button {
+        padding: 10px;
+        font-size: 16px;
+        background: none;
+        width: 30%;
+        margin-top: 40px;
+    }
+}
+
 @media (max-width: 40rem) {
     header {
         height: 100vh;
@@ -112,7 +133,7 @@ header {
                 display: flex;
                 justify-content: center;
                 font-weight: 800;
-                font-family: 'Playfair';
+                font-family: 'Avenir LT Std', sans-serif;
                 font-size: 50px;
             }
 

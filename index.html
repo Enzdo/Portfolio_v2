@@ -8,34 +8,49 @@
     <link rel="stylesheet" href="style/output.css">
     <link rel="icon" type="png" href="img/bg/unnamed.png" />
     <meta name="author" content="Deniau Enzo" />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src='script/jquery.svg3dtagcloud.min.js'></script>
+    <script src="script/comp.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <meta name="keywords" content="Deniau, Enzo, Portfolio, Deniau Enzo, IIM, iim" />
     <title>Portfolio Deniau Enzo</title>
     <meta name="description"
         content="Hello 👋, bienvenu(e) sur mon portfolio. Je m'appelle Deniau Enzo 19 ans et ici ce trouve un résumer mes expériences pro, mes projets, mes compétences etc  " />
 </head>
-<header>
-    <div class="nav-bar">
-        <div class="logo">
-            <a href="">Deniau</a>
-        </div>
-        <nav class="cursor-scale small">
-            <a class="hover-link cursor-scale small" href="#Aboutme">About me</a>
-            <a class="hover-link cursor-scale small" href="#Project">Projets</a>
-        </nav>
-    </div>
-    <div class="background-header">
-        <h1>PORTFOLIO</h1>
-        <div class="dev">
-            <p>2023</p>
-            <p>developper</p>
-        </div>
-    </div>
-    <div class="scroll">
-        <h3> <--- scroll down </h3>
-    </div>
-</header>
+
 
 <body>
+    <header>
+        <div class="cursor"></div>
+        <div class="nav-bar">
+            <div class="logo">
+                <a class="cursor-scale small" href="">Deniau</a>
+            </div>
+            <nav class="cursor-scale small">
+                <a class="hover-link cursor-scale small" href="#Aboutme">ABOUT ME</a>
+                <a class="hover-link cursor-scale small" href="#Project">PROJETS</a>
+                <a href="https://www.linkedin.com/in/enzo-deniau-29872221a/"><img src="img/logo_software/linkedln.png"
+                        alt=""></a>
+                <a href="https://github.com/Enzdo"><img src="img/logo_software/github.png" alt=""></a>
+            </nav>
+        </div>
+        <section class="hero-text">
+            <div class="hero-text-content">
+                <h1 class="cursor-scale">Hi, <br> I am Enzo <br> web developper </h1>
+                <h5 class="cursor-scale small">Front end developper</h5>
+            </div>
+            <div class="decoration">
+                <div class="blob"></div>
+            </div>
+        </section>
+
+
+        </div>
+        <div class="scroll">
+            <h3> <--- scroll down </h3>
+        </div>
+    </header>
     <div class="cursor"></div>
     <main>
         <div class="slider">
@@ -86,7 +101,7 @@
         </div>
         <div class="aboutMe">
             <div class="hello">
-                <img class="avatar" id="Aboutme" src="img/bg/unnamed.png" alt="">
+                <h2 id="Aboutme" class="cursor-scale small">About me</h2>
                 <p> <span class="color">Hello</span> 👋, bienvenu(e) sur mon portfolio. Je m'appelle<span class="color">
                         Deniau Enzo</span>
                     19 ans et ici ce trouve un résumer
@@ -98,7 +113,13 @@
                     framework, logiciel sur lequel j'ai pu acquérir des <span class="color"> compétences</span>.
                 </p>
             </div>
-            <div class="apropo">
+            <div class="pdp">
+                <img class="avatar" id="Aboutme" src="img/bg/unnamed.png" alt="">
+                <div class="box"></div>
+            </div>
+
+        </div>
+        <!-- <div class="apropo">
                 <div class="container">
                     <div class="box_1">
                         <h3>Hardskills</h3>
@@ -244,7 +265,7 @@
                             </div>
                             <div class="card_about">
                                 <h5>Stage</h5>
-                                <h6>Stage de 2 mois chez Axa france <br> service </h6>
+                                <h6>Stage de 2 mois chez Axa france <br>dans les services FAP </h6>
                                 <p>32 Bd des Bouvets, 92000 Nanterre</p>
                             </div>
                         </div>
@@ -320,7 +341,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
@@ -367,102 +388,145 @@
                 </div>
             </div>
         </div>
-        <div class="cv">
-            <Button>Cv vidéo</Button>
-            <Button>Cv papier</Button>
+        <div class="projet_tilte">
+            <div class="hello">
+                <h2 id="Project" class="cursor-scale small">Mes projets</h2>
+                <p>Juste en dessous vous pourrez voir quelques projets que j'ai pu réaliser principalement de projet
+                    scolaire.
+                    N'hésiter pas à cliquer dessus pour aller sur leur repo respectif et voir les différentes techno
+                    utilisé mais
+                    aussi lire les readme parlent du projet et les sites qui y sont relier.
+                    De nouveaux arrive très bientôt.
+
+                </p>
+            </div>
+            <div class="deco">
+                <h1>Work</h1>
+            </div>
         </div>
-        <div id="Project" class="project">
-            <h1>Mes projets</h1>
-            <div class="main">
-                <ul class="cards">
-                    <li class="cards_item">
-                        <div class="card">
-                            <div class="card_image"><img src="img/projet-tailwind.png"></div>
-                            <div class="card_content">
-                                <h2 class="card_title">Mise en prod ( Tailwind ) </h2>
-                                <p class="card_text">Création d'une page web a partir d'une maquette avec le framework
-                                    tailwind et vue
-                                </p>
-                                <div class="card_lien">
-                                    <a
-                                        href="https://github.com/Enzdo/Framework_Vite-Vue-Tailwind"><button>Repo</button></a>
-                                    <a href="https://framework-vite-vue-tailwind.vercel.app/"><button>Site</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div class="card">
-                            <div class="card_image"><img src="img/projet-api.png"></div>
-                            <div class="card_content">
-                                <h2 class="card_title">Pokedex avec API</h2>
-                                <p class="card_text">Création d'un pokedex lier a l'api pokémon avec des feature imposer
-                                </p>
-                                <div class="card_lien">
-                                    <a href="https://github.com/Enzdo/Pokedex-API"><button>Repo</button></a>
-                                    <a href="https://pokedex-js-pok-api.vercel.app/"><button>Site</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div class="card">
-                            <div class="card_image"><img src="img/projet-vue.png"></div>
-                            <div class="card_content">
-                                <h2 class="card_title">Petit project vue</h2>
-                                <p class="card_text">Petit project vue avec pour feature imposser l'enregistrement de
-                                    données en local meme si on change de page
-                                </p>
-                                <div class="card_lien">
-                                    <a href="https://github.com/Enzdo/Project_vue.js"><button>Repo</button></a>
-                                    <a href="https://project-vue-js.vercel.app/"><button>Site</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div class="card">
-                            <div class="card_image"><img src="img/bar_player.png"></div>
-                            <div class="card_content">
-                                <h2 class="card_title">Bar player one</h2>
-                                <p class="card_text">Home page sur le Bar player one exercice scolaire qui a pour but de
-                                    nous apprendre le scss
-                                </p>
-                                <div class="card_lien">
-                                    <a href="https://github.com/Enzdo/Bar_Player_One"><button>Repo</button></a>
-                                    <a href="https://exo-bar.vercel.app/"><button>Site</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+
+        <div class="container">
+
+            <div class="gallery">
+
+                <a href="https://github.com/Enzdo/Bar_Player_One">
+                    <div class="gallery-item">
+                        <img class="gallery-image" src="img/bar_player.png"
+                            alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                    </div>
+                </a>
+
+                <a href="https://github.com/Enzdo/Pokedex-API">
+                    <div class="gallery-item">
+                        <img class="gallery-image" src="img/projet-api.png"
+                            alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                    </div>
+                </a>
+
+                <a href="https://github.com/Enzdo/Framework_Vite-Vue-Tailwind">
+                    <div class="gallery-item">
+                        <img class="gallery-image" src="img/projet-tailwind.png"
+                            alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                    </div>
+                </a>
+
+                <a href="https://github.com/Enzdo/Project_vue.js">
+                    <div class="gallery-item">
+                        <img class="gallery-image" src="img/projet-vue.png"
+                            alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                    </div>
+                </a>
+
+
+
+            </div>
+
+        </div>
+
+        </div>
+        <div class="comp">
+            <div class="description">
+                <h1 class="cursor-scale small">Mes langages</h1>
+                <p>Étudiant à l'IIM dans l'axe Coding & digital innovation, j'ai pu développer des habitude pour
+                    certains quelques langages
+                    de programmations
+                    Actuellement plus spécialisé dans le front-end ( Html, Css, Javascript ) j'ai pu aussi pas mal
+                    touchée au Back-end ( Php, Sql ).
+                    sans oublier les Framework que j'ai pu voir ( Tailwind, Vue, Symfony ). J'ai pu aussi touchée à la
+                    création d'API ou tout simplement m'en servir comme pour mon projet de pokedex.
+                </p>
+
+            </div>
+            <div id="competence">
+
+            </div>
+        </div>
+        <div class="comp2">
+            <div class="description">
+                <h1 class="cursor-scale small">Mes logiciels</h1>
+                <p>Étudiant à l'IIM j'ai pu confirmer plusieurs maitrises sur différents logiciel comme Premiere pro,
+                    After effect, Indesign, Illustrator, Photoshop.
+                    J'ai un attrait particulier pour les logiciels comme adobe Xd ou Figma pour l'UI design
+                    de site web.
+
+
+                </p>
+
+            </div>
+            <div id="digital">
+
             </div>
         </div>
     </main>
-    <div id="box" class="box-4">
 
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="blob blob-4"></div>
-        <div class="blob blob-5"></div>
-        <div class="blob blob-6"></div>
-        <div class="blob blob-7"></div>
-        <div class="blob blob-8"></div>
-        <div class="blob blob-9"></div>
-        <div class="blob blob-10"></div>
-        <div class="blob blob-11"></div>
-        <div class="blob blob-12"></div>
-        <div class="blob blob-13"></div>
-        <div class="blob blob-14"></div>
-        <div class="blob blob-15"></div>
-        <div class="blob blob-16"></div>
-        <div class="blob blob-17"></div>
-    </div>
 </body>
 <footer>
-    <script src="script/cursor.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script>
+
+
+        var cursor = document.querySelector('.cursor'),
+            cursorScale = document.querySelectorAll('.cursor-scale'),
+            mouseX = 0,
+            mouseY = 0
+
+        gsap.to({}, 0.010, {
+            repeat: -1,
+
+            onRepeat: function () {
+                gsap.set(cursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                })
+            }
+
+        });
+
+
+
+
+
+        window.addEventListener("mousemove", function (e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY
+        });
+
+        cursorScale.forEach(link => {
+            link.addEventListener('mouseleave', () => {
+                cursor.classList.remove('grow');
+                cursor.classList.remove('grow-small');
+            });
+            link.addEventListener('mousemove', () => {
+                cursor.classList.add('grow');
+                if (link.classList.contains('small')) {
+                    cursor.classList.remove('grow');
+                    cursor.classList.add('grow-small');
+                }
+            });
+        });
+
     </script>
     <script src="script/animation.js"></script>
 </footer>
