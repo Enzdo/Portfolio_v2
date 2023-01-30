@@ -7,7 +7,7 @@ $(document).ready(function () {
         { image: './img/logo_software/HTML5.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Html' },
         { image: './img/logo_software/css.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Css' },
         { image: './img/logo_software/java.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Javascript' },
-        { image: './img/logo_software/Php.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Php' },
+        { image: './img/logo_software/phpobject.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Php' },
         { image: './img/logo_software/sql.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Sql' },
         { image: './img/logo_software/scss.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Scss' },
         { image: './img/logo_software/vue.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Vue' },
@@ -15,7 +15,7 @@ $(document).ready(function () {
         { image: './img/logo_software/three.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Three.js' },
         { image: './img/logo_software/spline.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Spline' },
         { image: './img/logo_software/symfony.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Symfony' },
-        { image: './img/logo_software/node.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Node.js' },
+        { image: './img/logo_software/nodejs.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Node.js' },
         { image: './img/logo_software/Wordpress_Blue_logo.png', width: '50', height: '50', url: 'http://jquery-plugins.net/', target: '_top', tooltip: 'Wordpress' }
     ];
 
