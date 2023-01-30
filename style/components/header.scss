@@ -37,7 +37,7 @@ header {
 
     .scroll {
         position: absolute;
-        top: 620px;
+        top: 90%;
         left: 0;
         transform: rotate(-90deg);
 
@@ -48,7 +48,6 @@ header {
     }
 
     .nav-bar {
-        background-color: white;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -117,57 +116,147 @@ header {
     }
 }
 
-@media (max-width: 40rem) {
-    header {
-        height: 100vh;
+@media (max-width : 68rem) {
+    .hero-text {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
 
-        .background-header {
-            width: 100%;
-            height: 65vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            h1 {
-                display: flex;
-                justify-content: center;
-                font-weight: 800;
-                font-family: 'Avenir LT Std', sans-serif;
-                font-size: 50px;
-            }
-
-            .dev {
-                display: flex;
-                justify-content: space-between;
-                width: 80%;
-
-                p {
-                    font-size: 12px;
-                    border: 2px solid black;
-                    border-radius: 15px;
-                    padding: 5px 15px;
-                }
-            }
-
-            .scroll {
-                transform: rotate(45deg);
-                font-family: "Open Sans", sans-serif;
-                font-size: 14px;
-            }
+        .decoration {
+            width: 50%;
         }
+    }
 
+    header {
         .nav-bar {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             width: 100%;
-            height: 20vh;
+            height: 12vh;
 
             .logo {
-                width: 100%;
+                width: 50%;
                 display: flex;
                 justify-content: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                font-family: 'Avenir LT Std', sans-serif;
+                font-weight: 600;
+                font-size: 35px;
+            }
+
+            nav {
+                padding: 10px 20px 0px 20px;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #000000;
+                    padding: 10px;
+                    font-family: 'Avenir LT Std', sans-serif;
+
+                    img {
+                        width: 17px;
+                        height: 17px;
+                        margin-top: -7px;
+                    }
+                }
+
+                .hover-link::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: rgb(255, 46, 81);
+                    transition: width .3s;
+                }
+
+                .hover-link:hover::after {
+                    width: 100%;
+                    transition: width .3s;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 40rem) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+
+
+        .background-header {
+            height: 80vh;
+            width: 80%;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            background: #000;
+
+            h1 {
+                display: flex;
+                text-align: left;
+                font-weight: 500;
+                font-family: 'Avenir LT Std';
+                font-size: 103px;
+            }
+
+            .dev {
+                display: flex;
+                justify-content: space-between;
+                width: 45%;
+
+                p {
+                    font-size: 17px;
+                    border: 2px solid black;
+                    border-radius: 15px;
+                    padding: 5px 15px;
+                }
+            }
+        }
+
+        .scroll {
+            position: absolute;
+            top: 90%;
+            left: 0;
+            transform: rotate(-90deg);
+
+            h3 {
+                font-family: "Open Sans", sans-serif;
+                font-size: 12px;
+            }
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            a {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                font-family: 'Avenir LT Std', sans-serif;
+                font-weight: 600;
+                font-size: 35px;
             }
 
             nav {
@@ -176,3 +265,5 @@ header {
         }
     }
 }
+
+@media (max-width : 40rem) {}

@@ -35,6 +35,17 @@
         height: 100%;
 
     }
+
+    .box {
+        display: none;
+    }
+
+    svg,
+    rect {
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 .comp2 {
@@ -71,6 +82,138 @@
     #digital {
         width: 50%;
         height: 100%;
+
+    }
+}
+
+@media (max-width : 68rem) {
+
+    .comp {
+        margin: 100px 0px;
+        flex-direction: column;
+        width: 90%;
+        height: 90vh;
+
+        .description {
+            width: 80%;
+
+            h1 {
+                text-align: left;
+                color: black;
+                font-size: 45px;
+            }
+
+            p {
+                text-align: justify;
+                padding: 40px 0px 0px 0px;
+                font-size: 18px;
+            }
+        }
+
+        .box {
+            display: flex;
+            Top: 555%;
+            left: -70vw;
+            z-index: -1;
+            filter: blur(150px);
+            position: absolute;
+            background-color: rgb(87, 87, 87);
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    #competence {
+        width: 100%;
+        height: 100%;
+    }
+
+    .comp2 {
+        flex-direction: column;
+        width: 90%;
+        height: 90vh;
+        margin: 100px 0px;
+
+        .description {
+            width: 80%;
+
+            h1 {
+                text-align: left;
+                color: black;
+                font-size: 45px;
+            }
+
+            p {
+                text-align: justify;
+                padding: 40px 0px 0px 0px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    #digitaux {
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media (max-width : 40rem) {
+
+    .comp {
+        margin: 0px;
+        flex-direction: column;
+        width: 95%;
+        height: 80vh;
+
+        .description {
+            width: 100%;
+        }
+
+        .box {
+            display: flex;
+            Top: 555%;
+            left: -70vw;
+            z-index: -1;
+            filter: blur(150px);
+            position: absolute;
+            background-color: rgb(87, 87, 87);
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    #competence {
+        width: 100%;
+        height: 100%;
+    }
+
+    svg,
+    rect {
+        width: 100%;
+        height: 100%;
+    }
+
+    .comp2 {
+        flex-direction: column;
+        width: 90%;
+        height: 80vh;
+        margin: 0px 0px;
+
+        .description {
+            width: 100%;
+        }
+    }
+
+    #digitaux {
+        width: 100%;
+        height: 100%;
+
+        svg,
+        rect {
+            width: 100%;
+            height: 100%;
+        }
 
     }
 }
