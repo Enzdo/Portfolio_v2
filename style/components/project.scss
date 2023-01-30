@@ -190,13 +190,7 @@
     padding: 100px 25px 100px 25px;
 
     .deco {
-      filter: blur(0px);
-      display: flex;
-      flex-direction: column;
-      justify-content: right;
-      z-index: -1;
-      width: 35%;
-      height: 100%;
+      display: none;
 
       h1 {
         left: -250px;
